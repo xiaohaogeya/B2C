@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b7049ec5-e50f-4997-ab37-3c8848a58509" name="Default Changelist" comment="" />
+    <list default="true" id="b7049ec5-e50f-4997-ab37-3c8848a58509" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LeastMall/common/utils.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/conf/mysql.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/conf/redis.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/controllers/default.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
   </component>
   <component name="GOROOT" url="file:///usr/local/go" />
   <component name="Git.Settings">
@@ -15,12 +33,15 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="20DnZHEVDJdO37CrkpKhNl8oTh3" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -40,6 +61,15 @@
       <filePath value="$PROJECT_DIR$/LeastMall/main.go" />
       <method v="2" />
     </configuration>
+    <configuration name="go build main.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="B2C" />
+      <working_directory value="$PROJECT_DIR$/LeastMall" />
+      <kind value="FILE" />
+      <package value="B2C" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/LeastMall/main.go" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build main.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="B2C" />
       <working_directory value="$PROJECT_DIR$" />
@@ -52,6 +82,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Go Build.go build LeastMall" />
+        <item itemvalue="Go Build.go build main.go (1)" />
         <item itemvalue="Go Build.go build main.go" />
       </list>
     </recent_temporary>
@@ -62,6 +93,18 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
