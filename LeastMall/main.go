@@ -4,8 +4,9 @@ import (
 	"LeastMall/common"
 	"LeastMall/models"
 	_ "LeastMall/routers"
-	"github.com/beego/beego/v2/adapter/plugins/cors"
 	beego "github.com/beego/beego/v2/server/web"
+	"github.com/beego/beego/v2/server/web/filter/cors"
+	_ "github.com/beego/beego/v2/server/web/session/redis"
 )
 
 func main() {
@@ -20,15 +21,25 @@ func main() {
 
 	// 后台配置允许跨域
 	beego.InsertFilter("*", beego.BeforeRouter, cors.Allow(&cors.Options{
-		AllowOrigins: []string{"127.0.0.1"},
-		AllowMethods: []string{
+		AllowOrigins: []string{"127.0.0.1"}, // 允许访问所有源
+		AllowMethods: []string{ // 可选参数
 			"GET",
 			"POST",
 			"PUT",
 			"DELETE",
 			"OPTIONS",
 		},
+		AllowHeaders: []string{ // 允许的Header种类
+			"Origin",
+			"Authorization",
+			"Access-Control-Allow-Origin",
+			"Access-Control-Allow-Headers",
+			"Content-Type"},
+		AllowCredentials: true, //是否允许cookie
 	}))
 
+	//配置redis用于存储session
+	beego.BConfig.WebConfig.Session.SessionProvider = "redis"
+	beego.BConfig.WebConfig.Session.SessionProviderConfig = "127.0.0.1:6379"
 	beego.Run()
 }

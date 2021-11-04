@@ -11,6 +11,7 @@ require (
 	github.com/alecthomas/units v0.0.0-20190717042225-c3de453c63f4 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
 	github.com/cespare/xxhash/v2 v2.1.1 // indirect
+	github.com/go-redis/redis/v7 v7.4.0 // indirect
 	github.com/golang/protobuf v1.4.2 // indirect
 	github.com/gomarkdown/markdown v0.0.0-20210918233619-6c1113f12c4a // indirect
 	github.com/gopherjs/gopherjs v0.0.0-20181017120253-0766667cb4d1 // indirect
