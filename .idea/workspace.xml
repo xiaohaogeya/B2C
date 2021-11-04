@@ -2,16 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7049ec5-e50f-4997-ab37-3c8848a58509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeastMall/common/utils.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeastMall/conf/mysql.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeastMall/conf/redis.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/common/backendAuth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/common/frontendAuth.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/models/Setting.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/common/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/common/utils.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/conf/app.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/controllers/default.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/controllers/default.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +52,7 @@
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RunManager" selected="Go Build.go build LeastMall">
     <configuration name="go build LeastMall" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
@@ -93,6 +96,7 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.conf" />
+    <option featureType="com.intellij.fileTypeFactory" implementationName="*.tpl" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
