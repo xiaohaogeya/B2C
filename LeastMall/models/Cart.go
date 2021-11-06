@@ -18,7 +18,7 @@ func (Cart) TableName() string {
 	return "cart"
 }
 
-//判断购物车里面有没有当前数据
+// CartHasData 判断购物车里面有没有当前数据
 func CartHasData(cartList []Cart, currentData Cart) bool {
 	for i := 0; i < len(cartList); i++ {
 		if cartList[i].Id == currentData.Id &&
