@@ -4,6 +4,7 @@ import (
 	"LeastMall/common"
 	"LeastMall/models"
 	_ "LeastMall/routers"
+
 	beego "github.com/beego/beego/v2/server/web"
 	"github.com/beego/beego/v2/server/web/filter/cors"
 	_ "github.com/beego/beego/v2/server/web/session/redis"
@@ -16,7 +17,7 @@ func main() {
 	_ = beego.AddFuncMap("mul", common.Mul)
 	_ = beego.AddFuncMap("formatAttribute", common.FormatAttribute)
 
-	//models.DB.LogMode(true)
+	models.DB.LogMode(true)
 	_ = beego.AddFuncMap("setting", models.GetSettingByColumn)
 
 	// 后台配置允许跨域

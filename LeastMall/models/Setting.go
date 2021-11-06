@@ -31,7 +31,7 @@ func GetSettingByColumn(columnName string) string {
 
 	//redis file
 	setting := Setting{}
-	//DB.First(&setting)
+	DB.First(&setting)
 	//反射来获取
 	v := reflect.ValueOf(setting)
 	val := v.FieldByName(columnName).String()
