@@ -47,3 +47,23 @@ func (c *AddressController) AddAddress() {
 	}
 	_ = c.ServeJSON()
 }
+
+func (c AddressController) GetOneAddressList()  {
+	addressId, err := c.GetInt("address_id")
+	if err != nil {
+		c.Data["json"] = map[string]interface{}{
+			"success": false,
+			"message": "传入参数错误",
+		}
+		_ = c.ServeJSON()
+		return
+	}
+
+	address := models.Address{}
+	models.DB.Where("id=?", addressId).Find(&address)
+	c.Data["json"] = map[string]interface{}{
+		"success": true,
+		"result": address,
+	}
+	_ = c.ServeJSON()
+}

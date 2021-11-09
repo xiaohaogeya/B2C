@@ -2,11 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7049ec5-e50f-4997-ab37-3c8848a58509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/frontend/AddressController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/frontend/BaseController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeastMall/models/Cookie.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/routers/backendRouter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/routers/frontendRouter.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeastMall/models/Cart.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/models/Cart.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/controllers/frontend/AddressController.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/controllers/frontend/AddressController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/go.mod" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/go.sum" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/models/User.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/routers/router.go" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
