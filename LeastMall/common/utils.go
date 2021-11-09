@@ -30,13 +30,23 @@ func GetDateTimeStr() string {
 }
 
 // TimestampToDate  时间戳转换成日期格式
-func TimestampToDate(timestamp int64) string {
-	return time.Unix(timestamp, 0).Format(DateTimeTemp)
+func TimestampToDate(timestamp int) string {
+	return time.Unix(int64(timestamp), 0).Format(DateTimeTemp)
 }
 
 // FormatDay 获取日期
 func FormatDay() string {
 	return time.Now().Format(DateTemp)
+}
+
+// GetUnix 获取当前时间戳
+func GetUnix() int64 {
+	return time.Now().Unix()
+}
+
+// GetUnixNano 获取时间戳Nano时间
+func GetUnixNano() int64 {
+	return time.Now().UnixNano()
 }
 
 // VerifyEmail 验证邮箱

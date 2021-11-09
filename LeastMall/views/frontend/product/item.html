@@ -1,0 +1,221 @@
+{{template "../public/page_header.html" .}}
+{{template "../public/banner.html" .}}
+
+<link rel="stylesheet" type="text/css" href="/static/frontend/css/product.css">
+<!-- end banner_x -->
+
+<!-- 详情 -->
+<div class="jieshao mt20 w">
+    <div class="left fl">
+        <div class="swiper-container">
+            <div class="swiper-wrapper item_focus" id="item_focus">
+            {{range $key,$value := .productImage}}
+                <div class="swiper-slide">
+                    <img src="{{$value.ImgUrl | formatImage}}"/>
+                </div>
+            {{end}}
+
+            </div>
+
+            <div class="swiper-pagination"></div>
+
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+        </div>
+
+
+    </div>
+    <div class="right fr">
+        <div class="h3 ml20 mt20">{{.product.Title}}</div>
+        <div class="jianjie mr40 ml20 mt10">{{.product.SubTitle}}</div>
+        <div class="jiage ml20 mt10">现价：{{.product.Price}}元　<span class="old_price">原价：{{.product.MarketPrice}}元</span>
+        </div>
+    {{$productId := .product.Id}}
+    {{if .relationProduct}}
+        <div class="ft20 ml20 mt20">选择版本</div>
+        <div class="xzbb ml20 mt10">
+        {{range $key,$value := .relationProduct}}
+            <div class="banben fl {{if eq $value.Id $productId}}active{{end}}">
+                <a href="item_{{$value.Id}}.html">
+                    <span>{{$value.ProductVersion}}</span>
+                    <span>{{$value.Price}}元</span>
+                </a>
+            </div>
+        {{end}}
+            <div class="clear"></div>
+        </div>
+    {{end}}
+    {{if .productColor}}
+        <div class="ft20 ml20 mt10">选择颜色</div>
+        <div class="xzbb ml20 mt10 clearfix" id="color_list">
+
+        {{range $key,$value:=.productColor}}
+            <div class="banben fl {{if eq $key 0}}active{{end}}" product_id="{{$productId}}" color_id="{{$value.Id}}">
+                <a>
+                    <span class="yuandian" style="background:{{$value.ColorValue}}"></span>
+                    <span class="yanse">{{$value.ColorName}}</span>
+                </a>
+            </div>
+        {{end}}
+
+        </div>
+    {{end}}
+        <div class="xqxq mt10 ml20">
+            <div class="top1 mt10">
+                <div class="left1 fl">{{.product.ProductVersion}} 　 <span id="color_name"></span></div>
+                <div class="right1 fr">{{.product.Price}}元</div>
+                <div class="clear"></div>
+            </div>
+            <div class="bot mt20 ft20 ftbc">总计：{{.product.Price}}元</div>
+        </div>
+        <div class="xiadan ml20 mt10">
+        {{if .collectStatus}}
+            <input class="addToCart" type="button" name="addToCart" id="collect" value="取消收藏"/>
+        {{else}}
+            <input class="addToCart" type="button" name="addToCart" id="collect" value="加入收藏"/>
+        {{end}}
+            <input class="addToCart" type="button" name="addToCart" id="addCart" value="加入购物车"/>
+
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+
+<div class="container clearfix">
+
+
+    <div class="c_left">
+
+        <h2>看了又看</h2>
+    {{range $key,$value:=.productAds}}
+        <div class="item">
+
+            <a target="_blank" href="item_{{$value.Id}}.html">
+
+                <img src={{$value.ProductImg}}/>
+
+                <p style="color: red;" class="price demoPrice">￥{{$value.Price}}元</p>
+
+                <p style="color: red;">{{$value.Title}}</p>
+                <p style="color: red;">{{$value.SubTitle}}</p>
+
+            </a>
+
+        </div>
+    {{end}}
+
+    </div>
+
+
+    <div class="c_right">
+        <ul class="detail_list clearfix">
+
+            <li class="">详情描述</li>
+
+            <li class="">规格参数</li>
+
+            <li class="">用户评价</li>
+        </ul>
+
+
+        <div class="detail_info">
+
+            <div class="detail_info_item">
+            {{str2html .product.ProductContent}}
+            </div>
+            <div class="detail_info_item">
+                <ul>
+
+                {{range $key,$value := .productAttr}}
+                    <li class="row clearfix">
+
+                        <div class="span5">
+
+                            <h2>{{$value.AttributeTitle}}</h2>
+                        </div>
+
+                        <div class="span15">
+                        {{$value.AttributeValue | formatAttribute | str2html}}
+                        </div>
+                    </li>
+                {{end}}
+                </ul>
+            </div>
+
+            <div class="detail_info_item">
+                <ul class="comment_list">
+                    <li>
+                        <div>
+                            <img src="https://www.frontend.com/themes/frontend/images/stars5.gif">
+                        </div>
+                        <p>好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！</p>
+
+                        <p class="eval-order-info"> <span class="eval-time">2020-05-04
+								14:00:35</span><span>月岩白</span><span>6GB+64GB</span><span></span></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="https://www.frontend.com/themes/frontend/images/stars5.gif">
+                        </div>
+                        <p>好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！</p>
+
+                        <p class="eval-order-info"> <span class="eval-time">2020-05-04
+								14:00:35</span><span>月岩白</span><span>6GB+64GB</span><span></span></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="https://www.frontend.com/themes/frontend/images/stars5.gif">
+                        </div>
+                        <p>好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！</p>
+                        <p class="eval-order-info"> <span class="eval-time">2020-05-04
+								14:00:35</span><span>月岩白</span><span>6GB+64GB</span><span></span></p>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="https://www.frontend.com/themes/frontend/images/stars5.gif">
+                        </div>
+                        <p>好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！好评！！</p>
+
+                        <p class="eval-order-info"> <span class="eval-time">2020-05-04
+								14:00:35</span><span>月岩白</span><span>6GB+64GB</span><span></span></p>
+
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</div>
+<script>
+    $(function () {
+        $('#addCart').click(function () {
+            var product_id = $('#color_list .active').attr('product_id');
+            var color_id = $('#color_list .active').attr('color_id');
+            location.href = "/cart/addCart?product_id=" + product_id + '&color_id=' + color_id;
+        });
+
+        $('#collect').click(function () {
+            var product_id = $('#color_list .active').attr('product_id');
+            $.get('/product/collect?product_id=' + product_id, function (response) {
+                if (response.success) {
+                    location.reload();
+                } else if (response.msg = "请先登陆") {
+                    location.href = "/pass/login"
+                }
+            }.bind(this))
+        });
+    })
+</script>
+
+{{template "../public/page_footer.html" .}}
+
+</body>
+
+</html>

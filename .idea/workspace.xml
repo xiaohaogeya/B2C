@@ -2,15 +2,218 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7049ec5-e50f-4997-ab37-3c8848a58509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeastMall/routers/backendRouter.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeastMall/routers/frontendRouter.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/backend/AdministratorController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/backend/AuthController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/backend/BannerController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/backend/BaseController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/css/bootstrap-theme.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/css/bootstrap-theme.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/css/bootstrap-theme.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/css/bootstrap.css.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/css/bootstrap.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/fonts/glyphicons-halflings-regular.eot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/fonts/glyphicons-halflings-regular.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/fonts/glyphicons-halflings-regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/fonts/glyphicons-halflings-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/js/bootstrap.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/js/jquery-1.10.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/bootstrap/js/npm.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/css/basic.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/diyUpload/css/diyUpload.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/diyUpload/css/webuploader.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/diyUpload/js/diyUpload.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/diyUpload/js/webuploader.html5only.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/images/login_bg.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/js/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/js/jqPaginator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/js/product.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/froala_editor.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/froala_editor.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/froala_editor.pkgd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/froala_editor.pkgd.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/froala_style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/froala_style.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins.pkgd.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins.pkgd.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/char_counter.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/char_counter.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/code_view.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/code_view.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/colors.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/colors.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/draggable.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/draggable.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/emoticons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/emoticons.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/file.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/file.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/fullscreen.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/fullscreen.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/help.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/help.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/image.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/image.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/image_manager.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/image_manager.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/line_breaker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/line_breaker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/quick_insert.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/quick_insert.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/special_characters.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/special_characters.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/table.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/table.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/video.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/plugins/video.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/themes/dark.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/themes/dark.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/themes/gray.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/themes/gray.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/themes/royal.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/themes/royal.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/third_party/embedly.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/third_party/embedly.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/third_party/font_awesome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/third_party/font_awesome.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/third_party/image_tui.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/third_party/image_tui.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/third_party/spell_checker.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/css/third_party/spell_checker.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/froala_editor.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/froala_editor.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/ar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/bs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/cs.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/da.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/de.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/el.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/en_ca.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/en_gb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/es.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/et.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/fa.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/fi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/fr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/he.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/hr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/hu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/id.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/it.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/ja.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/ko.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/ku.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/me.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/nb.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/nl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/pl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/pt_br.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/pt_pt.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/ro.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/ru.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/sk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/sl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/sr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/sv.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/th.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/tr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/uk.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/vi.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/zh_cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/languages/zh_tw.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins.pkgd.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/align.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/char_counter.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/code_beautifier.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/code_view.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/colors.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/draggable.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/edit_in_popup.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/emoticons.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/entities.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/file.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/font_family.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/font_size.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/forms.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/fullscreen.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/help.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/image.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/image_manager.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/inline_class.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/inline_style.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/line_breaker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/line_height.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/link.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/lists.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/paragraph_format.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/paragraph_style.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/print.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/quick_insert.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/quote.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/save.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/special_characters.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/table.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/url.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/video.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/plugins/word_paste.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/third_party/embedly.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/third_party/font_awesome.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/third_party/image_tui.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/third_party/spell_checker.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/backend/wysiwyg-editor/js/zh_cn.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/css/bootstrap.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/css/cart.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/css/checkout.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/css/order.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/css/pay.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/css/product.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/css/seckill.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/css/style.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/css/swiper.min.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/css/welcome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/image/brand1.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/image/dianshi.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/image/logo_top.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/image/m2.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/image/mi1.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/image/product5.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/image/shouji.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/js/base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/js/bootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/js/cart.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/js/checkout.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/js/jqPaginator.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/js/jquery-1.10.1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/frontend/js/swiper.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/public/img/avatar.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/public/img/logo.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/public/img/xsqg.psd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/static/public/js/reload.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/views/backend/administrator/add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/views/backend/administrator/edit.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/views/backend/administrator/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/views/backend/public/error.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/views/backend/public/page_aside.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/views/backend/public/page_header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/views/backend/public/page_menu.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/views/backend/public/success.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/common/backendAuth.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/common/backendAuth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/common/frontendAuth.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/common/frontendAuth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/common/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/common/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/conf/app.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/controllers/default.go" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/controllers/frontend/AddressController.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/controllers/frontend/AddressController.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/go.mod" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/go.mod" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/go.sum" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/go.sum" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeastMall/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/models/User.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeastMall/routers/router.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/routers/backendRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/routers/backendRouter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/routers/frontendRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/routers/frontendRouter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/static/js/reload.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/static/backend/js/reload.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/views/index.tpl" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +223,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Go File" />
       </list>
     </option>
@@ -42,14 +246,24 @@
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="configurable..is.expanded" value="false" />
+    <property name="configurable.GoLibrariesConfigurable.is.expanded" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/LeastMall/views/backend" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="go.sdk" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/LeastMall/views/backend" />
+      <recent name="$PROJECT_DIR$/LeastMall" />
+    </key>
   </component>
   <component name="RunManager" selected="Go Build.go build LeastMall">
     <configuration name="go build LeastMall" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">

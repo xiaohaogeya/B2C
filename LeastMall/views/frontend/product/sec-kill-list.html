@@ -1,0 +1,124 @@
+{{template "../public/page_header.html" .}}
+{{template "../public/banner.html" .}}
+<script type="text/javascript" src="/static/backend/js/jqPaginator.js"></script>
+<link rel="stylesheet" href="/static/backend/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="/static/frontend/css/seckill.css">
+<!-- start 单品 -->
+<div class="singleproduct center">
+    <div class="main center mb20">
+        <div class="seckill">
+            <div class="seckill-head"><h1>限时秒杀</h1></div>
+        {{/*<img src="/static/public/img/xsqg.jpg">*/}}
+            <div class="loading" style="display: none;">
+                <div class="loader"></div>
+            </div>
+            <div style="">
+                <div class="container">
+                    <div class="seckill-banner">
+                        <div class="container relative">
+                            <ul>
+                                <li class="active"><a href="javascript:void(0);"
+                                                      data-log_code="bpm=57.181.3586816.217&amp;cdm=0.0.0.0&amp;uni=&amp;next="
+                                                      data-settrack="true"
+                                                      onclick="_msq.push(['trackEvent','bpm=57.181.3586816.217&amp;cdm=0.0.0.0&amp;uni=&amp;next=','javascript:void(0);','21d6858364a4cb1d-127e971db0409761','&quot;&quot;']);"
+                                                      stat_exposure="true"><em>
+                                    14:00
+                                </em><span><em>抢购中</em><div>距结束 04:36:04</div></span></a></li>
+                                <li class=""><a href="javascript:void(0);"
+                                                data-log_code="bpm=57.181.3586816.218&amp;cdm=0.0.0.0&amp;uni=&amp;next="
+                                                data-settrack="true"
+                                                onclick="_msq.push(['trackEvent','bpm=57.181.3586816.218&amp;cdm=0.0.0.0&amp;uni=&amp;next=','javascript:void(0);','21d6858364a4cb1d-2ba427d2d54db267','&quot;&quot;']);"
+                                                stat_exposure="true"><em>
+                                    20:00
+                                </em><span>
+                即将开始
+            </span></a></li>
+                                <li class=""><a href="javascript:void(0);"
+                                                data-log_code="bpm=57.181.3586816.219&amp;cdm=0.0.0.0&amp;uni=&amp;next="
+                                                data-settrack="true"
+                                                onclick="_msq.push(['trackEvent','bpm=57.181.3586816.219&amp;cdm=0.0.0.0&amp;uni=&amp;next=','javascript:void(0);','21d6858364a4cb1d-87c8b916c46ecbb7','&quot;&quot;']);"
+                                                stat_exposure="true"><em>
+                                    22:00
+                                </em><span>
+                即将开始
+            </span></a></li>
+                                <li class=""><a href="javascript:void(0);"
+                                                data-log_code="bpm=57.181.3586816.220&amp;cdm=0.0.0.0&amp;uni=&amp;next="
+                                                data-settrack="true"
+                                                onclick="_msq.push(['trackEvent','bpm=57.181.3586816.220&amp;cdm=0.0.0.0&amp;uni=&amp;next=','javascript:void(0);','21d6858364a4cb1d-849e5c107cbcf9ad','&quot;&quot;']);"
+                                                stat_exposure="true"><em>
+                                    00:00
+                                </em><span>
+                明日开始
+            </span></a></li>
+                                <li class=""><a href="javascript:void(0);"
+                                                data-log_code="bpm=57.181.3586816.221&amp;cdm=0.0.0.0&amp;uni=&amp;next="
+                                                data-settrack="true"
+                                                onclick="_msq.push(['trackEvent','bpm=57.181.3586816.221&amp;cdm=0.0.0.0&amp;uni=&amp;next=','javascript:void(0);','21d6858364a4cb1d-96cbdf5ad38c1bd2','&quot;&quot;']);"
+                                                stat_exposure="true"><em>
+                                    10:00
+                                </em><span>
+                明日开始
+            </span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="seckill-con">
+                        <div class="container">
+                            <ul class="clearfix">
+                            {{range $key,$value := .productList}}
+                                <li class="item-seckill"><a href="item_{{$value.Id}}.html" target="_blank"></a>
+                                    <div class="item-box"><span class="img-con"><img
+                                            src="{{$value.ProductImg | formatImage}}"
+                                            lazy="loaded"></span><span class="pro-con">
+                                        <span title="{{$value.Title}}"  class="name">{{$value.Title}}</span>
+                                        <span class="desc">简约设计，轻盈握感</span>
+                                        <!---->
+                                        <span class="price">{{$value.Price}}元
+                                           <del>8888.88元</del>
+                                        </span>
+                                        <!---->
+                                    </span>
+                                    </div>
+                                    <a href="item_{{$value.Id}}.html" data-id="2194500031"
+                                       class="btn btn-green btn-small btn-primary">
+                                        抢购
+                                    </a>
+                                </li>
+                            {{end}}
+                            </ul>
+                        </div>
+                    </div>
+                </div><!----></div>
+            <div class="container notic">
+                *小米秒杀活动规则：
+                <br>1.秒杀商品是否参加活动、最终秒杀成功的商品，以订单结算页显示为准，活动包括但不限于优惠券、赠品、满减、满赠等；<br>
+                2.秒杀商品数量有限，活动以下单支付成功为准，请加入购物车后尽快下单支付;<br>
+                3.秒杀价不含运费，最终以订单结算页价格为准；<br>
+                4.订单中商品的数量、颜色、型号等，以订单结算页为准。<br>
+                温馨提示：因可能存在系统缓存、页面更新导致价格变动异常等不确定性情况出现，如您发现活动商品标价或促销信息有异常，请您立即联系小米客服，以便我们及时补正。
+            </div>
+        </div>
+    </div>
+    <div class="clear"></div>
+</div>
+
+<!-- end 单品 -->
+<script>
+    $(function () {
+        $('#pagination').jqPaginator({
+            totalPages: {{.totalPages}},
+            visiblePages: 10,
+            currentPage: {{.page}},
+            onPageChange: function (num, type) {
+                console.log(num, type)
+                if (type == "change") {
+                    location.href = "/category_{{.curretProductCate.Id}}.html?page=" + num;
+                }
+            }
+        });
+    })
+</script>
+{{template "../public/page_footer.html" .}}
+</body>
+</html>
