@@ -18,7 +18,7 @@ func BackendAuth(ctx *context.Context) {
 	userinfo, ok := ctx.Input.Session("userinfo").(models.Administrator)
 	if !(ok && userinfo.Username != "") {
 		if pathname != "/"+adminPath+"/login" && pathname != "/"+adminPath+"/login/gologin" && pathname != "/"+adminPath+"/login/verificode" {
-			//ctx.Redirect(302, "/"+adminPath+"/login")
+			ctx.Redirect(302, "/"+adminPath+"/login")
 		}
 	} else {
 		pathname = strings.Replace(pathname, adminPath, "", 1)

@@ -2,12 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7049ec5-e50f-4997-ab37-3c8848a58509" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/backend/LoginController.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/common/backendAuth.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/common/backendAuth.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/conf/app.conf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/controllers/backend/BannerController.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/controllers/backend/BannerController.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/routers/backendRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/routers/backendRouter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeastMall/views/backend/banner/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/views/backend/banner/add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeastMall/views/backend/banner/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/views/backend/banner/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +40,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
@@ -51,7 +53,7 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/LeastMall/views/backend" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="go.sdk" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">

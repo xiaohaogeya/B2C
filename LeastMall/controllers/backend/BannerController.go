@@ -3,6 +3,7 @@ package backend
 import (
 	"LeastMall/common"
 	"LeastMall/models"
+	beego "github.com/beego/beego/v2/server/web"
 	"github.com/prometheus/common/log"
 	"os"
 	"strconv"
@@ -111,7 +112,8 @@ func (c *BannerController) Delete() {
 	}
 	banner := models.Banner{Id: id}
 	models.DB.Find(&banner)
-	address := "/Users/xiaohaoge/go/src/B2C/LeastMall/" + banner.BannerImg // 物理机地址
+	projectPath, _ := beego.AppConfig.String("ProjectPath")
+	address := projectPath + banner.BannerImg // 物理机地址
 	test := os.Remove(address)
 	if test != nil {
 		log.Error(test)

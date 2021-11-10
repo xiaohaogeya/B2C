@@ -11,6 +11,11 @@ func init() {
 	ns := beego.NewNamespace("/"+adminPath,
 		beego.NSBefore(common.BackendAuth),
 
+		// 后台管理
+		beego.NSRouter("/login", &backend.LoginController{}),
+		beego.NSRouter("/login/gologin", &backend.LoginController{}, "post:GoLogin"),
+		beego.NSRouter("/login/loginout", &backend.LoginController{}, "get:LoginOut"),
+
 		// 管理员管理
 		beego.NSRouter("/administrator", &backend.AdministratorController{}),
 		beego.NSRouter("/administrator/add", &backend.AdministratorController{}, "get:Add"),
