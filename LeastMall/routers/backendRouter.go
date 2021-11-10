@@ -12,6 +12,12 @@ func init() {
 		beego.NSBefore(common.BackendAuth),
 
 		// 后台管理
+		beego.NSRouter("/", &backend.MainController{}),
+		beego.NSRouter("/welcome", &backend.MainController{}, "get:Welcome"),
+		beego.NSRouter("/main/changestatus", &backend.MainController{}, "get:ChangeStatus"),
+		beego.NSRouter("/main/editnum", &backend.MainController{}, "get:EditNum"),
+
+		// 登录登出
 		beego.NSRouter("/login", &backend.LoginController{}),
 		beego.NSRouter("/login/gologin", &backend.LoginController{}, "post:GoLogin"),
 		beego.NSRouter("/login/loginout", &backend.LoginController{}, "get:LoginOut"),
@@ -39,6 +45,14 @@ func init() {
 		beego.NSRouter("/banner/goadd", &backend.BannerController{}, "post:GoAdd"),
 		beego.NSRouter("/banner/goedit", &backend.BannerController{}, "post:GoEdit"),
 		beego.NSRouter("/banner/delete", &backend.BannerController{}, "get:Delete"),
+
+		// 导航管理
+		beego.NSRouter("/menu", &backend.MenuController{}),
+		beego.NSRouter("/menu/add", &backend.MenuController{}, "get:Add"),
+		beego.NSRouter("/menu/edit", &backend.MenuController{}, "get:Edit"),
+		beego.NSRouter("/menu/goadd", &backend.MenuController{}, "post:GoAdd"),
+		beego.NSRouter("/menu/goedit", &backend.MenuController{}, "post:GoEdit"),
+		beego.NSRouter("/menu/delete", &backend.MenuController{}, "get:Delete"),
 	)
 	beego.AddNamespace(ns)
 }

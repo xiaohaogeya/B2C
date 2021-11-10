@@ -4,7 +4,7 @@ import (
 	"LeastMall/common"
 	"LeastMall/models"
 	_ "LeastMall/routers"
-
+	"encoding/gob"
 	beego "github.com/beego/beego/v2/server/web"
 	"github.com/beego/beego/v2/server/web/filter/cors"
 	_ "github.com/beego/beego/v2/server/web/session/redis"
@@ -38,6 +38,9 @@ func main() {
 			"Content-Type"},
 		AllowCredentials: true, //是否允许cookie
 	}))
+
+	//注册模型
+	gob.Register(models.Administrator{})
 
 	//配置redis用于存储session
 	beego.BConfig.WebConfig.Session.SessionProvider = "redis"
