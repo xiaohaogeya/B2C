@@ -8,6 +8,7 @@
 *.jpg
 *.png
 *.gif
+*.jpeg
 
 # Test binary, built with `go test -c`
 *.test
