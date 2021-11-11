@@ -68,6 +68,9 @@ func init() {
 		beego.NSRouter("/productCate/goadd", &backend.ProductCateController{}, "post:GoAdd"),
 		beego.NSRouter("/productCate/goedit", &backend.ProductCateController{}, "post:GoEdit"),
 		beego.NSRouter("/productCate/delete", &backend.ProductCateController{}, "get:Delete"),
+
+		// 商品管理
+		beego.NSRouter("/product", &backend.ProductController{}),
 	)
 	beego.AddNamespace(ns)
 }

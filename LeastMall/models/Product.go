@@ -39,8 +39,8 @@ func (Product) TableName() string {
 }
 
 func GetProductByCategory(cateId int, productType string, limitNum int) []Product {
-	product := []Product{}
-	productCate := []ProductCate{}
+	var product []Product
+	var productCate []ProductCate
 	DB.Where("pid=?", cateId).Find(&productCate)
 	var tempSlice []int
 	if len(productCate) > 0 {
