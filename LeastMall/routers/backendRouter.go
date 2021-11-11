@@ -53,6 +53,13 @@ func init() {
 		beego.NSRouter("/menu/goadd", &backend.MenuController{}, "post:GoAdd"),
 		beego.NSRouter("/menu/goedit", &backend.MenuController{}, "post:GoEdit"),
 		beego.NSRouter("/menu/delete", &backend.MenuController{}, "get:Delete"),
+
+		// 订单管理
+		beego.NSRouter("/order", &backend.OrderController{}),
+		beego.NSRouter("/order/detail", &backend.OrderController{}, "get:Detail"),
+		beego.NSRouter("/order/edit", &backend.OrderController{}, "get:Edit"),
+		beego.NSRouter("/order/goEdit", &backend.OrderController{}, "post:GoEdit"),
+		beego.NSRouter("/order/delete", &backend.OrderController{}, "get:Delete"),
 	)
 	beego.AddNamespace(ns)
 }
