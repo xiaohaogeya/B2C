@@ -75,7 +75,7 @@ func (c *BaseController) LocalUploadImg(picName string) (string, error) {
 	day := common.FormatDay()
 	dir := "static/upload/" + day
 
-	if err := os.MkdirAll(dir, 0666); err != nil {
+	if err := os.MkdirAll(dir, os.ModeDir|os.ModePerm); err != nil {
 		return "", err
 	}
 	//5、生成文件名称   144325235235.png

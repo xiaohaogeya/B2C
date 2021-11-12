@@ -71,6 +71,15 @@ func init() {
 
 		// 商品管理
 		beego.NSRouter("/product", &backend.ProductController{}),
+		beego.NSRouter("/product/add", &backend.ProductController{}, "get:Add"),
+		beego.NSRouter("/product/goadd", &backend.ProductController{}, "post:GoAdd"),
+		beego.NSRouter("/product/edit", &backend.ProductController{}, "get:Edit"),
+		beego.NSRouter("/product/goedit", &backend.ProductController{}, "post:GoEdit"),
+		beego.NSRouter("/product/delete", &backend.ProductController{}, "get:Delete"),
+		beego.NSRouter("/product/goUpload", &backend.ProductController{}, "post:GoUpload"),
+		beego.NSRouter("/product/getProductTypeAttribute", &backend.ProductController{}, "get:GetProductTypeAttribute"),
+		beego.NSRouter("/product/changeProductImageColor", &backend.ProductController{}, "get:ChangeProductImageColor"),
+		beego.NSRouter("/product/removeProductImage", &backend.ProductController{}, "get:RemoveProductImage"),
 	)
 	beego.AddNamespace(ns)
 }
