@@ -65,4 +65,9 @@ func init() {
 	beego.Router("/search/filterQuery", &frontend.SearchController{}, "get:FilterQuery")
 	beego.Router("/search/productList", &frontend.SearchController{}, "get:ProductList")
 
+	// 用户
+	beego.InsertFilter("/user/*", beego.BeforeRouter, common.FrontendAuth)
+	beego.Router("/user", &frontend.UserController{})
+	beego.Router("/user/order", &frontend.UserController{}, "get:OrderList")
+	beego.Router("/user/orderinfo", &frontend.UserController{}, "get:OrderInfo")
 }
