@@ -50,4 +50,10 @@ func init() {
 	beego.Router("/alipayNotify", &frontend.PayController{}, "post:AlipayNotify")
 	beego.Router("/alipayReturn", &frontend.PayController{}, "get:AlipayReturn")
 
+	// 产品
+	beego.Router("/category_:id([0-9]+).html", &frontend.ProductController{}, "get:CategoryList")
+	beego.Router("/item_:id([0-9]+).html", &frontend.ProductController{}, "get:ProductItem")
+	beego.Router("/product/getImgList", &frontend.ProductController{}, "get:GetImgList")
+	beego.Router("/product/collect", &frontend.ProductController{}, "get:Collect")
+
 }

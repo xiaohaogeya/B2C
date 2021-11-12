@@ -34,7 +34,7 @@
             onPageChange: function (num, type) {
                 console.log(num, type)
                 if (type == "change") {
-                    location.href = "/category_{{.curretProductCate.Id}}.html?page=" + num;
+                    location.href = "/category_{{.currentProductCate.Id}}.html?page=" + num;
                 }
             }
         });
