@@ -88,6 +88,14 @@ func init() {
 		beego.NSRouter("/productTypeAttribute/goadd", &backend.ProductTypeAttrController{}, "post:GoAdd"),
 		beego.NSRouter("/productTypeAttribute/goedit", &backend.ProductTypeAttrController{}, "post:GoEdit"),
 		beego.NSRouter("/productTypeAttribute/delete", &backend.ProductTypeAttrController{}, "get:Delete"),
+
+		// 商品类型管理
+		beego.NSRouter("/productType", &backend.ProductTypeController{}),
+		beego.NSRouter("/productType/add", &backend.ProductTypeController{}, "get:Add"),
+		beego.NSRouter("/productType/edit", &backend.ProductTypeController{}, "get:Edit"),
+		beego.NSRouter("/productType/goadd", &backend.ProductTypeController{}, "post:GoAdd"),
+		beego.NSRouter("/productType/goedit", &backend.ProductTypeController{}, "post:GoEdit"),
+		beego.NSRouter("/productType/delete", &backend.ProductTypeController{}, "get:Delete"),
 	)
 	beego.AddNamespace(ns)
 }
