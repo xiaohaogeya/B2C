@@ -10,7 +10,7 @@ func init() {
 	// 首页
 	beego.Router("/", &frontend.IndexController{})
 
-	// 配置中间件判断权限
+	// 地址 配置中间件判断权限
 	beego.InsertFilter("/address/*", beego.BeforeRouter, common.FrontendAuth)
 	beego.Router("/address/add", &frontend.AddressController{}, "post:AddAddress")
 	beego.Router("/address/getOneAddress", &frontend.AddressController{}, "get:GetOneAddress")
@@ -37,4 +37,11 @@ func init() {
 	beego.Router("/cart/delCart", &frontend.CartController{}, "get:DelCart")
 	beego.Router("/cart/changeOneCart", &frontend.CartController{}, "get:ChangeOneCart")
 	beego.Router("/cart/changeAllCart", &frontend.CartController{}, "get:ChangeAllCart")
+
+	// 结算 配置中间件判断权限
+	beego.InsertFilter("/buy/*", beego.BeforeRouter, common.FrontendAuth)
+	beego.Router("/buy/checkout", &frontend.CheckoutController{}, "get:Checkout")
+	beego.Router("/buy/doOrder", &frontend.CheckoutController{}, "post:GoOrder")
+	beego.Router("/buy/confirm", &frontend.CheckoutController{}, "get:Confirm")
+	beego.Router("/buy/orderPayStatus", &frontend.CheckoutController{}, "get:OrderPayStatus")
 }
