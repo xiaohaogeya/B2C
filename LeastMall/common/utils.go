@@ -10,6 +10,7 @@ import (
 	"github.com/gomarkdown/markdown"
 	"github.com/hunterhug/go_image"
 	"github.com/prometheus/common/log"
+	"io/ioutil"
 	"math/rand"
 	"path"
 	"regexp"
@@ -127,4 +128,11 @@ func FormatAttribute(str string) string {
 // Mul 计算乘法
 func Mul(price float64, num int) float64 {
 	return price * float64(num)
+}
+
+// SendMsg 发送验证码
+func SendMsg(str string) {
+	// 短信验证码需要到相关网站申请
+	// 目前先固定一个值
+	_ = ioutil.WriteFile("test_send.txt", []byte(str), 06666)
 }

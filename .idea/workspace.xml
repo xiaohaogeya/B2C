@@ -2,11 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7049ec5-e50f-4997-ab37-3c8848a58509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/backend/RoleController.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/backend/SettingController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/frontend/AuthController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/frontend/CartController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/frontend/IndexController.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/common/utils.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/common/utils.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/controllers/frontend/BaseController.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/controllers/frontend/BaseController.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeastMall/routers/backendRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/routers/backendRouter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/models/Cache.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/models/Cache.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/models/User.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/models/User.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/routers/frontendRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/routers/frontendRouter.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/views/backend/auth/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/views/backend/auth/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/views/backend/productType/add.html" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/views/backend/productType/add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/views/backend/role/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/views/backend/role/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/views/frontend/public/page_footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/views/frontend/public/page_footer.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

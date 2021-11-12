@@ -67,3 +67,5 @@ func (c cacheDb) Get(key string, obj interface{}) bool {
 	}
 	return false
 }
+
+var CacheDb = &cacheDb{}
