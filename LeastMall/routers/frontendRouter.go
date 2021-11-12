@@ -44,4 +44,10 @@ func init() {
 	beego.Router("/buy/doOrder", &frontend.CheckoutController{}, "post:GoOrder")
 	beego.Router("/buy/confirm", &frontend.CheckoutController{}, "get:Confirm")
 	beego.Router("/buy/orderPayStatus", &frontend.CheckoutController{}, "get:OrderPayStatus")
+
+	// 支付宝支付
+	beego.Router("/alipay", &frontend.PayController{}, "get:Alipay")
+	beego.Router("/alipayNotify", &frontend.PayController{}, "post:AlipayNotify")
+	beego.Router("/alipayReturn", &frontend.PayController{}, "get:AlipayReturn")
+
 }

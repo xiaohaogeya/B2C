@@ -21,6 +21,7 @@ import (
 
 const (
 	DateTimeTemp = "2006-01-02 15:04:05"
+	DateTimeTemp2 = "20060102150405"
 	DateTemp     = "20060102"
 	MinuteTemp   = "200601021504"
 )
@@ -28,6 +29,11 @@ const (
 // GetDateTimeStr 获取当前日期时间字符串
 func GetDateTimeStr() string {
 	return time.Now().Format(DateTimeTemp)
+}
+
+// GetDateTimeStr2 获取当前日期时间字符串
+func GetDateTimeStr2() string {
+	return time.Now().Format(DateTimeTemp2)
 }
 
 // TimestampToDate  时间戳转换成日期格式

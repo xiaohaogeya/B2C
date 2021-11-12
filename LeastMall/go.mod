@@ -11,6 +11,7 @@ require (
 	github.com/jinzhu/gorm v1.9.16
 	github.com/olivere/elastic/v7 v7.0.29
 	github.com/prometheus/common v0.10.0
+	github.com/smartwalle/alipay/v3 v3.1.6
 	github.com/smartystreets/goconvey v1.6.4
 )
 
@@ -39,6 +40,7 @@ require (
 	github.com/satori/go.uuid v1.2.0 // indirect
 	github.com/shiena/ansicolor v0.0.0-20151119151921-a422bbe96644 // indirect
 	github.com/sirupsen/logrus v1.4.2 // indirect
+	github.com/smartwalle/crypto4go v1.0.2 // indirect
 	github.com/smartystreets/assertions v1.1.1 // indirect
 	golang.org/x/crypto v0.0.0-20200622213623-75b288015ac9 // indirect
 	golang.org/x/mod v0.3.0 // indirect
