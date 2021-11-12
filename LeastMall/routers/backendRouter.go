@@ -3,6 +3,7 @@ package routers
 import (
 	"LeastMall/common"
 	"LeastMall/controllers/backend"
+	"LeastMall/controllers/frontend"
 	beego "github.com/beego/beego/v2/server/web"
 )
 
@@ -110,6 +111,9 @@ func init() {
 		beego.NSRouter("/role/delete", &backend.RoleController{}, "get:Delete"),
 		beego.NSRouter("/role/auth", &backend.RoleController{}, "get:Auth"),
 		beego.NSRouter("/role/goauth", &backend.RoleController{}, "post:GoAuth"),
+
+		// 商品搜索管理
+		beego.NSRouter("/search/addProduct", &frontend.SearchController{}, "get:AddProduct"),
 	)
 	beego.AddNamespace(ns)
 }

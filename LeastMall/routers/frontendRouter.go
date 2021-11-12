@@ -56,4 +56,13 @@ func init() {
 	beego.Router("/product/getImgList", &frontend.ProductController{}, "get:GetImgList")
 	beego.Router("/product/collect", &frontend.ProductController{}, "get:Collect")
 
+	// 搜索
+	beego.Router("/search", &frontend.SearchController{})
+	beego.Router("/search/getOne", &frontend.SearchController{}, "get:GetOne")
+	beego.Router("/search/update", &frontend.SearchController{}, "get:Update")
+	beego.Router("/search/delete", &frontend.SearchController{}, "get:Delete")
+	beego.Router("/search/query", &frontend.SearchController{}, "get:Query")
+	beego.Router("/search/filterQuery", &frontend.SearchController{}, "get:FilterQuery")
+	beego.Router("/search/productList", &frontend.SearchController{}, "get:ProductList")
+
 }
