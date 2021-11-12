@@ -96,6 +96,20 @@ func init() {
 		beego.NSRouter("/productType/goadd", &backend.ProductTypeController{}, "post:GoAdd"),
 		beego.NSRouter("/productType/goedit", &backend.ProductTypeController{}, "post:GoEdit"),
 		beego.NSRouter("/productType/delete", &backend.ProductTypeController{}, "get:Delete"),
+
+		//系统设置
+		beego.NSRouter("/setting", &backend.SettingController{}),
+		beego.NSRouter("/setting/goedit", &backend.SettingController{}, "post:GoEdit"),
+
+		//部门管理
+		beego.NSRouter("/role", &backend.RoleController{}),
+		beego.NSRouter("/role/add", &backend.RoleController{}, "get:Add"),
+		beego.NSRouter("/role/goadd", &backend.RoleController{}, "post:GoAdd"),
+		beego.NSRouter("/role/edit", &backend.RoleController{}, "get:Edit"),
+		beego.NSRouter("/role/goedit", &backend.RoleController{}, "post:GoEdit"),
+		beego.NSRouter("/role/delete", &backend.RoleController{}, "get:Delete"),
+		beego.NSRouter("/role/auth", &backend.RoleController{}, "get:Auth"),
+		beego.NSRouter("/role/goauth", &backend.RoleController{}, "post:GoAuth"),
 	)
 	beego.AddNamespace(ns)
 }

@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b7049ec5-e50f-4997-ab37-3c8848a58509" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/backend/ProductTypeController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/backend/RoleController.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/LeastMall/controllers/backend/SettingController.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/lastupdate.tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/routers/backendRouter.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/routers/backendRouter.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

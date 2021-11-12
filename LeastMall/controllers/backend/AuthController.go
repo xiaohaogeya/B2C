@@ -13,6 +13,7 @@ func (c *AuthController) Get() {
 	var authList []models.Auth
 	models.DB.Preload("AuthItem").Where("module_id=0").Find(&authList)
 	c.Data["authList"] = authList
+	c.TplName = "backend/auth/index.html"
 }
 
 func (c *AuthController) Add() {
