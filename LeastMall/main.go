@@ -44,6 +44,7 @@ func main() {
 
 	//配置redis用于存储session
 	beego.BConfig.WebConfig.Session.SessionProvider = "redis"
-	beego.BConfig.WebConfig.Session.SessionProviderConfig = "127.0.0.1:6379"
+	//beego.BConfig.WebConfig.Session.SessionProviderConfig = "127.0.0.1:6379"
+	beego.BConfig.WebConfig.Session.SessionProviderConfig = "redisServiceHost:6379"
 	beego.Run()
 }

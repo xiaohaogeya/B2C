@@ -16,8 +16,13 @@ func init() {
 	mysqlAdmin, _ := beego.AppConfig.String("MysqlUser")
 	mysqlPwd, _ := beego.AppConfig.String("MysqlPwd")
 	mysqlDB, _ := beego.AppConfig.String("MysqlDB")
+	mysqlHost, _ := beego.AppConfig.String("MysqlHost")
+	log.Info("mysqlAdmin------>", mysqlAdmin)
+	log.Info("mysqlPwd------>", mysqlPwd)
+	log.Info("mysqlDB------>", mysqlDB)
+	log.Info("mysqlHost------>", mysqlHost)
 	DB, err =
-		gorm.Open("mysql", mysqlAdmin+":"+mysqlPwd+"@/"+mysqlDB+"?charset=utf8"+
+		gorm.Open("mysql", mysqlAdmin+":"+mysqlPwd+"@tcp("+mysqlHost+")/"+mysqlDB+"?charset=utf8"+
 			"&parseTime=True&loc=Local")
 	if err != nil {
 		log.Error(err)

@@ -1,0 +1,38 @@
+version: '3'
+
+services:
+  mysql:
+    image: mysql:5.7
+    command: --default-authentication-plugin=mysql_native_password
+    container_name: b2c_mysql
+    hostname: mysqlServiceHost
+    ports:
+    - "3306:3306"
+    restart: on-failure
+    volumes:
+    - /B2C/mysql:/var/lib/mysql
+    - /B2C/conf:/etc/mysql/conf.d
+    environment:
+    - MYSQL_ROOT_PASSWORD=xiaohaoge
+    - MYSQL_DATABASE=b2c
+
+
+  redis:
+    image: redis
+    container_name: b2c_redis
+    hostname: redisServiceHost
+    restart: on-failure
+    ports:
+    - "6379:6379"
+
+  golang:
+    build: .
+    restart: on-failure
+    ports:
+    - "8888:8888"
+    links:
+      - mysql
+      - redis
+    volumes:
+    - /B2C/LeastMall:/go
+    tty: true

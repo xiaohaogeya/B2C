@@ -28,8 +28,9 @@ func init() {
 			"password": redisPwd,
 		}
 		bytes, _ := json.Marshal(config)
-
+		log.Info(string(bytes))
 		redisClient, err = cache.NewCache("redis", string(bytes))
+		log.Error(err)
 		_, _ = cache.NewCache("redis", string(bytes))
 		if err != nil {
 			log.Error("连接redis数据库失败")
