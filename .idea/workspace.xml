@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="b7049ec5-e50f-4997-ab37-3c8848a58509" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/B2C.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/B2C.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeastMall/LeastMall" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LeastMall/main" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/LeastMall/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/LeastMall/main.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
